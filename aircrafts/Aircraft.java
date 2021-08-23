@@ -8,6 +8,10 @@ public abstract class Aircraft {
     
     protected Aircraft(String name, Coordinates coordinates) {
         this.name = name;
+        if (coordinates.getHeight() > 100) {
+            coordinates = new Coordinates(
+                coordinates.getLongitude(), coordinates.getLatitude(), 100);
+        }
         this.coordinates = coordinates;
         this.id = idCounter++;
     }

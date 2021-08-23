@@ -1,27 +1,32 @@
 package weather_tower;
 import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 import aircrafts.Flyable;
 
 public abstract class Tower {
-    private ArrayList<Flyable> observers = new ArrayList<>();
+    private List<Flyable> observers = new CopyOnWriteArrayList<>();
 
     public void register(Flyable flyable) {
         observers.add(flyable);
-        System.out.println("Tower gegistered " + flyable.getClass());
+        System.out.println("Tower registered " + flyable.getClass());
     }
 
     public void unregister(Flyable flyable) {
-        try {
+        int index = observers.indexOf(flyable);
+        if (index >= 0) {
             observers.remove(flyable);
-        } catch (Exception e) {
+        } else {
             System.out.println("Flyable " + flyable.toString() + " not registered.");
-            e.printStackTrace();
         }
     }
 
     protected void conditionsChanged() {
-        for (Flyable f : observers) {
+        Iterator<Flyable> iterator = observers.listIterator();
+        while (iterator.hasNext()) {
+            Flyable f = iterator.next();
             f.updateConditions();
         }
     }
