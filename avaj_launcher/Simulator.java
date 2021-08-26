@@ -64,6 +64,10 @@ public class Simulator {
             System.err.println(e.getMessage());
             e.printStackTrace();
         }
+        List<String> log = Logger.getSimulationLog();
+        for (String s : log) {
+            System.out.println(s);
+        }
     }
 
     private static void startSimulation(int counter, List<Flyable> flyables) {

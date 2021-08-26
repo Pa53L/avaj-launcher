@@ -2,12 +2,14 @@ package aircrafts;
 
 import weather_tower.WeatherTower;
 
+import static avaj_launcher.Logger.log;
+
 public class Baloon extends Aircraft implements Flyable {
     private WeatherTower weatherTower;
 
     Baloon(String name, Coordinates coordinates) {
         super(name, coordinates);
-        System.out.println(name + " " + super.coordinates.getLongitude() + " " + super.coordinates.getLatitude() + " " + super.coordinates.getHeight());
+        super.name = this.getClass().getSimpleName() + "#" + name + "(" + id + ")";
     }
 
     public void updateConditions() {
@@ -18,26 +20,26 @@ public class Baloon extends Aircraft implements Flyable {
 
         switch (curWeather) {
             case ("SUN"):
-                System.out.println("SUN");
+                log(name + ": Let's enjoy the good weather and take some pics.");
                 newLongitude += 2;
                 newHeight = Math.min(newHeight + 4, 100);
                 break;
             case ("SNOW"):
-                System.out.println("SNOW");
+                log(name + ": It's snowing. We're gonna crash.");
                 newHeight = Math.max(0, newHeight - 15);
                 break;
             case ("RAIN"):
-                System.out.println("RAIN");
+                log(name + ": Damn your rain! You messed up my baloon.");
                 newHeight = Math.max(0, newHeight - 5);
                 break;
             case ("FOG"):
-                System.out.println("FOG");
+                log(name + ": F**ng fog. We're like blind kittens.");
                 newHeight = Math.max(0, newHeight - 3);
                 break;
         }
         coordinates = new Coordinates(newLongitude, newLatitude, newHeight);
         if (coordinates.getHeight() == 0) {
-            System.out.println(this.getClass().getSimpleName() + "#" + name + "("+id+")" + " unregistered from weather tower");
+            log(name + " landing");
             weatherTower.unregister(this);
         }
     }
@@ -45,6 +47,12 @@ public class Baloon extends Aircraft implements Flyable {
     public void registerTower(WeatherTower weatherTower) {
         this.weatherTower = weatherTower;
         weatherTower.register(this);
+//        log("Tower says: " + name + " registered to weather tower.");
+    }
+
+    @Override
+    public String getName() {
+        return super.name;
     }
 
 }

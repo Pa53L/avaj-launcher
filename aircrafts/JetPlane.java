@@ -3,11 +3,14 @@ package aircrafts;
 // import aircrafts.Aircraft;
 import weather_tower.WeatherTower;
 
+import static avaj_launcher.Logger.log;
+
 public class JetPlane extends Aircraft implements Flyable {
     private WeatherTower weatherTower;
 
     JetPlane(String name, Coordinates coordinates) {
         super(name, coordinates);
+        super.name = this.getClass().getSimpleName() + "#" + name + "(" + id + ")";
     }
 
     public void updateConditions() {
@@ -18,26 +21,27 @@ public class JetPlane extends Aircraft implements Flyable {
 
         switch (curWeather) {
             case ("SUN"):
-                System.out.println("SUN");
+                log(name + ": I'm a firestarter, twisted firestarter");
                 newLatitude += 10;
                 newHeight = Math.min(newHeight + 2, 100);
                 break;
             case ("SNOW"):
-                System.out.println("SNOW");
+                log(name + ": OMG! Winter is coming!");
                 newHeight = Math.max(0, newHeight - 7);
                 break;
             case ("RAIN"):
-                System.out.println("RAIN");
-                newLatitude =+ 5;
+                log(name + ": It's raining. Better watch out for lightnings.");
+                newLatitude += 5;
                 break;
             case ("FOG"):
-                System.out.println("FOG");
+                log(name + ": The radar won't let you down!");
                 newLatitude += 1;
                 break;
         }
         coordinates = new Coordinates(newLongitude, newLatitude, newHeight);
         if (coordinates.getHeight() == 0) {
-            System.out.println(this.getClass().getName() + "#" + name + "("+id+")" + " unregistered from weather tower");
+//            log("Tower says: " + name + " unregistered from weather tower");
+            log(name + " landing");
             weatherTower.unregister(this);
         }
     }
@@ -45,5 +49,11 @@ public class JetPlane extends Aircraft implements Flyable {
     public void registerTower(WeatherTower weatherTower) {
         this.weatherTower = weatherTower;
         weatherTower.register(this);
+//        log("Tower says: " + name + " registered to weather tower.");
+    }
+
+    @Override
+    public String getName() {
+        return super.name;
     }
 }

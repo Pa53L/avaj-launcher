@@ -1,11 +1,14 @@
 package aircrafts;
 import weather_tower.WeatherTower;
 
+import static avaj_launcher.Logger.log;
+
 public class Helicopter extends Aircraft implements Flyable {
     private WeatherTower weatherTower;
 
     Helicopter(String name, Coordinates coordinates) {
         super(name, coordinates);
+        super.name = this.getClass().getSimpleName() + "#" + name + "(" + id + ")";
     }
 
     public void updateConditions() {
@@ -16,31 +19,39 @@ public class Helicopter extends Aircraft implements Flyable {
 
         switch (curWeather) {
             case ("SUN"):
-                System.out.println("SUN");
+                log(name + ": This is hot.");
                 newLongitude += 10;
                 newHeight = Math.min(newHeight + 2, 100);
                 break;
             case ("SNOW"):
-                System.out.println("SNOW");
+                log(name + ": My rotor is going to freeze!");
                 newHeight = Math.max(0, newHeight - 12);
                 break;
             case ("RAIN"):
-                System.out.println("RAIN");
-                newLongitude =+ 5;
+                log(name + ": I'm so wet, if you know what I mean!");
+                newLongitude += 5;
                 break;
             case ("FOG"):
-                System.out.println("FOG");
+                log(name + ": Fog of war is hiding our enemy's!");
                 newLongitude += 1;
                 break;
         }
         coordinates = new Coordinates(newLongitude, newLatitude, newHeight);
         if (coordinates.getHeight() == 0) {
-            System.out.println(this.getClass().getName() + "#" + name + "("+id+")" + " unregistered from weather tower");
+//            log("Tower says: " + name + " unregistered from weather tower");
+            log(name + " landing");
             weatherTower.unregister(this);
         }
     }
 
     public void registerTower(WeatherTower weatherTower) {
         this.weatherTower = weatherTower;
+        weatherTower.register(this);
+//        log("Tower says: " + name + " registered to weather tower.");
+    }
+
+    @Override
+    public String getName() {
+        return super.name;
     }
 }
