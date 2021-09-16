@@ -13,10 +13,10 @@ public abstract class Aircraft {
                 coordinates.getLongitude(), coordinates.getLatitude(), 100);
         }
         this.coordinates = coordinates;
-        this.id = idCounter++;
+        this.id = nextId();
     }
 
     private long nextId() {
-        return id;
+        return id++;
     }
 }

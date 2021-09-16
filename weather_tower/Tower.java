@@ -22,7 +22,7 @@ public abstract class Tower {
             observers.remove(flyable);
             log("Tower says: " + flyable.getName() + " unregistered from weather tower");
         } else {
-            System.out.println("Flyable " + flyable.toString() + " not registered.");
+            log("Flyable " + flyable.toString() + " not registered.");
         }
     }
 

@@ -40,7 +40,6 @@ public class JetPlane extends Aircraft implements Flyable {
         }
         coordinates = new Coordinates(newLongitude, newLatitude, newHeight);
         if (coordinates.getHeight() == 0) {
-//            log("Tower says: " + name + " unregistered from weather tower");
             log(name + " landing");
             weatherTower.unregister(this);
         }
@@ -49,7 +48,6 @@ public class JetPlane extends Aircraft implements Flyable {
     public void registerTower(WeatherTower weatherTower) {
         this.weatherTower = weatherTower;
         weatherTower.register(this);
-//        log("Tower says: " + name + " registered to weather tower.");
     }
 
     @Override
