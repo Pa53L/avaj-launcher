@@ -1,0 +1,167 @@
+Tower says: Baloon#B1(0) registered to weather tower.
+Tower says: Baloon#B2(0) registered to weather tower.
+Tower says: JetPlane#J1(0) registered to weather tower.
+Tower says: Helicopter#H1(0) registered to weather tower.
+Tower says: Helicopter#H2(0) registered to weather tower.
+Tower says: Helicopter#H3(0) registered to weather tower.
+Tower says: Baloon#B3(0) registered to weather tower.
+Tower says: JetPlane#J2(0) registered to weather tower.
+Tower says: Helicopter#H4(0) registered to weather tower.
+Baloon#B1(0): It's snowing. We're gonna crash.
+Baloon#B2(0): F**ng fog. We're like blind kittens.
+JetPlane#J1(0): The radar won't let you down!
+Helicopter#H1(0): Fog of war is hiding our enemy's!
+Helicopter#H2(0): Fog of war is hiding our enemy's!
+Helicopter#H3(0): My rotor is going to freeze!
+Baloon#B3(0): Damn your rain! You messed up my baloon.
+JetPlane#J2(0): It's raining. Better watch out for lightnings.
+Helicopter#H4(0): This is hot.
+Baloon#B1(0): Damn your rain! You messed up my baloon.
+Baloon#B1(0) landing
+Tower says: Baloon#B1(0) unregistered from weather tower
+Baloon#B2(0): Let's enjoy the good weather and take some pics.
+JetPlane#J1(0): I'm a firestarter, twisted firestarter
+Helicopter#H1(0): This is hot.
+Helicopter#H2(0): This is hot.
+Helicopter#H3(0): My rotor is going to freeze!
+Baloon#B3(0): It's snowing. We're gonna crash.
+JetPlane#J2(0): The radar won't let you down!
+Helicopter#H4(0): This is hot.
+Baloon#B2(0): Damn your rain! You messed up my baloon.
+JetPlane#J1(0): I'm a firestarter, twisted firestarter
+Helicopter#H1(0): This is hot.
+Helicopter#H2(0): This is hot.
+Helicopter#H3(0): My rotor is going to freeze!
+Baloon#B3(0): Damn your rain! You messed up my baloon.
+JetPlane#J2(0): I'm a firestarter, twisted firestarter
+Helicopter#H4(0): This is hot.
+Baloon#B2(0): It's snowing. We're gonna crash.
+JetPlane#J1(0): I'm a firestarter, twisted firestarter
+Helicopter#H1(0): This is hot.
+Helicopter#H2(0): This is hot.
+Helicopter#H3(0): My rotor is going to freeze!
+Baloon#B3(0): It's snowing. We're gonna crash.
+Baloon#B3(0) landing
+Tower says: Baloon#B3(0) unregistered from weather tower
+JetPlane#J2(0): It's raining. Better watch out for lightnings.
+Helicopter#H4(0): This is hot.
+Baloon#B2(0): Damn your rain! You messed up my baloon.
+JetPlane#J1(0): I'm a firestarter, twisted firestarter
+Helicopter#H1(0): This is hot.
+Helicopter#H2(0): This is hot.
+Helicopter#H3(0): My rotor is going to freeze!
+JetPlane#J2(0): The radar won't let you down!
+Helicopter#H4(0): This is hot.
+Baloon#B2(0): It's snowing. We're gonna crash.
+JetPlane#J1(0): I'm a firestarter, twisted firestarter
+Helicopter#H1(0): This is hot.
+Helicopter#H2(0): This is hot.
+Helicopter#H3(0): My rotor is going to freeze!
+JetPlane#J2(0): I'm a firestarter, twisted firestarter
+Helicopter#H4(0): This is hot.
+Baloon#B2(0): Damn your rain! You messed up my baloon.
+JetPlane#J1(0): I'm a firestarter, twisted firestarter
+Helicopter#H1(0): This is hot.
+Helicopter#H2(0): This is hot.
+Helicopter#H3(0): My rotor is going to freeze!
+JetPlane#J2(0): It's raining. Better watch out for lightnings.
+Helicopter#H4(0): This is hot.
+Baloon#B2(0): It's snowing. We're gonna crash.
+JetPlane#J1(0): I'm a firestarter, twisted firestarter
+Helicopter#H1(0): This is hot.
+Helicopter#H2(0): This is hot.
+Helicopter#H3(0): My rotor is going to freeze!
+JetPlane#J2(0): The radar won't let you down!
+Helicopter#H4(0): This is hot.
+Baloon#B2(0): Damn your rain! You messed up my baloon.
+JetPlane#J1(0): I'm a firestarter, twisted firestarter
+Helicopter#H1(0): This is hot.
+Helicopter#H2(0): This is hot.
+Helicopter#H3(0): My rotor is going to freeze!
+Helicopter#H3(0) landing
+Tower says: Helicopter#H3(0) unregistered from weather tower
+JetPlane#J2(0): I'm a firestarter, twisted firestarter
+Helicopter#H4(0): This is hot.
+Baloon#B2(0): It's snowing. We're gonna crash.
+Baloon#B2(0) landing
+Tower says: Baloon#B2(0) unregistered from weather tower
+JetPlane#J1(0): I'm a firestarter, twisted firestarter
+Helicopter#H1(0): This is hot.
+Helicopter#H2(0): This is hot.
+JetPlane#J2(0): It's raining. Better watch out for lightnings.
+Helicopter#H4(0): This is hot.
+JetPlane#J1(0): I'm a firestarter, twisted firestarter
+Helicopter#H1(0): This is hot.
+Helicopter#H2(0): This is hot.
+JetPlane#J2(0): The radar won't let you down!
+Helicopter#H4(0): This is hot.
+JetPlane#J1(0): I'm a firestarter, twisted firestarter
+Helicopter#H1(0): This is hot.
+Helicopter#H2(0): This is hot.
+JetPlane#J2(0): I'm a firestarter, twisted firestarter
+Helicopter#H4(0): This is hot.
+JetPlane#J1(0): I'm a firestarter, twisted firestarter
+Helicopter#H1(0): This is hot.
+Helicopter#H2(0): This is hot.
+JetPlane#J2(0): It's raining. Better watch out for lightnings.
+Helicopter#H4(0): This is hot.
+JetPlane#J1(0): I'm a firestarter, twisted firestarter
+Helicopter#H1(0): This is hot.
+Helicopter#H2(0): This is hot.
+JetPlane#J2(0): The radar won't let you down!
+Helicopter#H4(0): This is hot.
+JetPlane#J1(0): I'm a firestarter, twisted firestarter
+Helicopter#H1(0): This is hot.
+Helicopter#H2(0): This is hot.
+JetPlane#J2(0): I'm a firestarter, twisted firestarter
+Helicopter#H4(0): This is hot.
+JetPlane#J1(0): I'm a firestarter, twisted firestarter
+Helicopter#H1(0): This is hot.
+Helicopter#H2(0): This is hot.
+JetPlane#J2(0): It's raining. Better watch out for lightnings.
+Helicopter#H4(0): This is hot.
+JetPlane#J1(0): I'm a firestarter, twisted firestarter
+Helicopter#H1(0): This is hot.
+Helicopter#H2(0): This is hot.
+JetPlane#J2(0): The radar won't let you down!
+Helicopter#H4(0): This is hot.
+JetPlane#J1(0): I'm a firestarter, twisted firestarter
+Helicopter#H1(0): This is hot.
+Helicopter#H2(0): This is hot.
+JetPlane#J2(0): I'm a firestarter, twisted firestarter
+Helicopter#H4(0): This is hot.
+JetPlane#J1(0): I'm a firestarter, twisted firestarter
+Helicopter#H1(0): This is hot.
+Helicopter#H2(0): This is hot.
+JetPlane#J2(0): It's raining. Better watch out for lightnings.
+Helicopter#H4(0): This is hot.
+JetPlane#J1(0): I'm a firestarter, twisted firestarter
+Helicopter#H1(0): This is hot.
+Helicopter#H2(0): This is hot.
+JetPlane#J2(0): The radar won't let you down!
+Helicopter#H4(0): This is hot.
+JetPlane#J1(0): I'm a firestarter, twisted firestarter
+Helicopter#H1(0): This is hot.
+Helicopter#H2(0): This is hot.
+JetPlane#J2(0): I'm a firestarter, twisted firestarter
+Helicopter#H4(0): This is hot.
+JetPlane#J1(0): I'm a firestarter, twisted firestarter
+Helicopter#H1(0): This is hot.
+Helicopter#H2(0): This is hot.
+JetPlane#J2(0): It's raining. Better watch out for lightnings.
+Helicopter#H4(0): This is hot.
+JetPlane#J1(0): I'm a firestarter, twisted firestarter
+Helicopter#H1(0): This is hot.
+Helicopter#H2(0): This is hot.
+JetPlane#J2(0): The radar won't let you down!
+Helicopter#H4(0): This is hot.
+JetPlane#J1(0): I'm a firestarter, twisted firestarter
+Helicopter#H1(0): This is hot.
+Helicopter#H2(0): This is hot.
+JetPlane#J2(0): I'm a firestarter, twisted firestarter
+Helicopter#H4(0): This is hot.
+JetPlane#J1(0): I'm a firestarter, twisted firestarter
+Helicopter#H1(0): This is hot.
+Helicopter#H2(0): This is hot.
+JetPlane#J2(0): It's raining. Better watch out for lightnings.
+Helicopter#H4(0): I'm so wet, if you know what I mean!

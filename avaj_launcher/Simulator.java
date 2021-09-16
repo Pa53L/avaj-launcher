@@ -68,6 +68,7 @@ public class Simulator {
         for (String s : log) {
             System.out.println(s);
         }
+        Utils.writeFile(log);
     }
 
     private static void startSimulation(int counter, List<Flyable> flyables) {

@@ -4,13 +4,15 @@ import Exceptions.InvalidAircraftException;
 import aircrafts.AircraftFactory;
 import aircrafts.Flyable;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
+import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
 public class Utils {
+    private static final String SIMULATION = "simulation.txt";
     static int simulationCounter = 0;
     static List<Flyable> flyables = new ArrayList<>();
 
@@ -49,7 +51,7 @@ public class Utils {
                             height = 100;
                         }
                     } catch (Exception e) {
-                        System.err.println("Invalid parameters of Aircraft");
+                        throw new InvalidAircraftException();
                     }
                     flyables.add(AircraftFactory.newAircraft(type, name, longitude, latitude, height));
                 } else {
@@ -65,5 +67,20 @@ public class Utils {
         return type.toLowerCase(Locale.ROOT).equals("baloon")
                 || type.toLowerCase(Locale.ROOT).equals("helicopter")
                 || type.toLowerCase(Locale.ROOT).equals("jetplane");
+    }
+
+    public static void writeFile(List<String> log) {
+        try {
+            Files.deleteIfExists(Paths.get(SIMULATION));
+            BufferedWriter writer = new BufferedWriter(new FileWriter(SIMULATION));
+            for (String s : log) {
+                writer.write(s + "\n");
+            }
+            writer.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+
     }
 }
