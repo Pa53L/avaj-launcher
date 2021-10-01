@@ -1,5 +1,5 @@
 package aircrafts;
-import weather_tower.WeatherTower;
+import weather.WeatherTower;
 
 public interface Flyable {
     void updateConditions();

@@ -1,9 +1,9 @@
 package aircrafts;
 
 // import aircrafts.Aircraft;
-import weather_tower.WeatherTower;
+import weather.WeatherTower;
 
-import static avaj_launcher.Logger.log;
+import static utils.Logger.log;
 
 public class JetPlane extends Aircraft implements Flyable {
     private WeatherTower weatherTower;

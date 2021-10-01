@@ -1,4 +1,4 @@
-package weather_tower;
+package weather;
 
 import aircrafts.Coordinates;
 

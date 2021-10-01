@@ -1,4 +1,4 @@
-package avaj_launcher;
+package utils;
 
 import Exceptions.InvalidAircraftException;
 import aircrafts.AircraftFactory;
@@ -11,10 +11,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
-public class Utils {
+public class Parser {
     private static final String SIMULATION = "simulation.txt";
-    static int simulationCounter = 0;
-    static List<Flyable> flyables = new ArrayList<>();
+    public static int simulationCounter = 0;
+    public static List<Flyable> flyables = new ArrayList<>();
 
     public static void scenarioParser(String path) {
         try (FileReader reader = new FileReader(path);
@@ -27,9 +27,9 @@ public class Utils {
                 System.err.println("First line must be an Integer");
             }
             while ((line = br.readLine()) != null) {
-                int longitude = 0;
-                int latitude = 0;
-                int height = 0;
+                int longitude;
+                int latitude;
+                int height;
                 String type;
                 String name;
                 String[] aircraft = line.split(" ");
@@ -80,7 +80,5 @@ public class Utils {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
-
     }
 }

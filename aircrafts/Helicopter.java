@@ -1,7 +1,7 @@
 package aircrafts;
-import weather_tower.WeatherTower;
+import weather.WeatherTower;
 
-import static avaj_launcher.Logger.log;
+import static utils.Logger.log;
 
 public class Helicopter extends Aircraft implements Flyable {
     private WeatherTower weatherTower;
@@ -38,7 +38,6 @@ public class Helicopter extends Aircraft implements Flyable {
         }
         coordinates = new Coordinates(newLongitude, newLatitude, newHeight);
         if (coordinates.getHeight() == 0) {
-//            log("Tower says: " + name + " unregistered from weather tower");
             log(name + " landing");
             weatherTower.unregister(this);
         }
@@ -47,7 +46,6 @@ public class Helicopter extends Aircraft implements Flyable {
     public void registerTower(WeatherTower weatherTower) {
         this.weatherTower = weatherTower;
         weatherTower.register(this);
-//        log("Tower says: " + name + " registered to weather tower.");
     }
 
     @Override

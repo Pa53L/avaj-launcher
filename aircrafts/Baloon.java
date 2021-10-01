@@ -1,8 +1,8 @@
 package aircrafts;
 
-import weather_tower.WeatherTower;
+import weather.WeatherTower;
 
-import static avaj_launcher.Logger.log;
+import static utils.Logger.log;
 
 public class Baloon extends Aircraft implements Flyable {
     private WeatherTower weatherTower;
@@ -47,7 +47,6 @@ public class Baloon extends Aircraft implements Flyable {
     public void registerTower(WeatherTower weatherTower) {
         this.weatherTower = weatherTower;
         weatherTower.register(this);
-//        log("Tower says: " + name + " registered to weather tower.");
     }
 
     @Override

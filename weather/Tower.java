@@ -1,12 +1,10 @@
-package weather_tower;
-import java.util.ArrayList;
+package weather;
 import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
-import aircrafts.Aircraft;
 import aircrafts.Flyable;
-import static avaj_launcher.Logger.log;
+import static utils.Logger.log;
 
 public abstract class Tower {
     private List<Flyable> observers = new CopyOnWriteArrayList<>();

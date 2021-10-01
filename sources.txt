@@ -1,3 +1,5 @@
+Exceptions/InvalidAircraftException.java
+Simulator.java
 aircrafts/Aircraft.java
 aircrafts/AircraftFactory.java
 aircrafts/Baloon.java
@@ -5,7 +7,8 @@ aircrafts/Coordinates.java
 aircrafts/Flyable.java
 aircrafts/Helicopter.java
 aircrafts/JetPlane.java
-avaj_launcher/Simulator.java
-weather_tower/Tower.java
-weather_tower/WeatherProvider.java
-weather_tower/WeatherTower.java
+utils/Logger.java
+utils/Parser.java
+weather/Tower.java
+weather/WeatherProvider.java
+weather/WeatherTower.java
